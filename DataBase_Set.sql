@@ -233,7 +233,9 @@ CREATE TABLE Users
 	-- ユーザー名
 	Users_Name varchar(100) NOT NULL COMMENT 'ユーザー名',
 	-- ユーザ住所
-	Address varchar(100) NOT NULL COMMENT 'ユーザ住所',
+	Address varchar(100)  COMMENT 'ユーザ住所',
+	--価格上限
+	Max_Pricw int NOT NULL COMMENT '価格上限',
 	Reg_Day date NOT NULL,
 	PRIMARY KEY (ID),
 	UNIQUE (ID),
